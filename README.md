@@ -1,6 +1,4 @@
-# 🚀 POML AI-Powered Interactive Demo & Medium Blog
-
-This project contains both a comprehensive Medium blog article about POML (Prompt Orchestration Markup Language) and an advanced AI-integrated Streamlit demonstration application that connects directly to Google's Gemini 2.5 Pro model.
+# 🚀 POML (Prompt Orchestration Markup Language): Microsoft new markup method for prompt engineering.
 
 ## Project Structure
 
