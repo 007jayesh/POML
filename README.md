@@ -7,7 +7,6 @@ This project contains both a comprehensive Medium blog article about POML (Promp
 ```
 POML/
 ├── app.py                 # Main Streamlit application
-├── medium_blog.md         # Complete Medium blog article
 ├── requirements.txt       # Python dependencies
 ├── venv/                 # Virtual environment
 └── README.md             # This file
@@ -77,17 +76,6 @@ The interactive demo includes revolutionary AI integration:
 - **Live Preview**: See rendered output as you type
 - **Template Management**: Save and load custom POML templates
 - **Export Capabilities**: Download conversation logs and analytics
-
-## Medium Blog
-
-The `medium_blog.md` file contains a complete article suitable for Medium publication, covering:
-
-- Introduction to prompt engineering challenges
-- POML features and benefits
-- Architecture and component system
-- Real-world applications
-- Getting started guide
-- Interactive demo showcase
 
 ## 🔧 Technical Implementation
 
@@ -179,15 +167,6 @@ response = renderer.execute_with_ai(poml_content, user_input)
 </poml>
 ```
 
-## 🚀 Deployment & Environment
-
-### 🌐 Platform Support
-The AI-powered Streamlit app can be deployed to:
-- **Streamlit Cloud**: Easy one-click deployment
-- **Heroku**: Container-based deployment
-- **AWS/GCP/Azure**: Full cloud integration
-- **Docker**: Containerized deployment
-- **Local Development**: Full-featured local testing
 
 ### 🔑 Environment Configuration
 ```bash
@@ -195,22 +174,8 @@ The AI-powered Streamlit app can be deployed to:
 GOOGLE_API_KEY=your_gemini_api_key_here
 GEMINI_MODEL=gemini-2.5-pro-preview-03-25
 
-# Optional Configuration
-STREAMLIT_THEME=dark
-ANALYTICS_ENABLED=true
 ```
 
-### 📦 Docker Deployment
-```dockerfile
-# Dockerfile example
-FROM python:3.11-slim
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-COPY . .
-EXPOSE 8501
-CMD ["streamlit", "run", "app.py"]
-```
 
 ## 🤝 Contributing & Enhancement Ideas
 
@@ -221,14 +186,6 @@ CMD ["streamlit", "run", "app.py"]
 - **🔧 Enhanced Rendering**: Better syntax validation and error handling
 - **📱 Mobile Optimization**: Responsive design improvements
 - **🔒 Security Features**: Enhanced API key management and validation
-
-### 🚀 Advanced Features
-- **💾 Template Marketplace**: Community-driven template sharing
-- **🔄 Version Control**: Git-like versioning for POML templates
-- **🧪 A/B Testing**: Automated prompt performance testing
-- **🎯 Custom Metrics**: User-defined quality measurement criteria
-- **📈 ML Insights**: Machine learning-powered prompt optimization
-- **🌐 Multi-language**: Support for international POML development
 
 ### 🛠️ Development Workflow
 ```bash
@@ -247,29 +204,3 @@ streamlit run app.py --server.runOnSave true
 - [Official POML Documentation](https://microsoft.github.io/poml/latest/)
 - [POML GitHub Repository](https://github.com/microsoft/poml)
 - [VS Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.poml)
-
-## 📄 License & Usage
-
-### 📋 License
-This project is released under the MIT License for educational and demonstration purposes.
-
-### 🎯 Usage Rights
-- ✅ **Educational Use**: Free for learning and teaching
-- ✅ **Research**: Academic and commercial research applications
-- ✅ **Modification**: Adapt and enhance for your needs
-- ✅ **Distribution**: Share with proper attribution
-- ✅ **Commercial**: Use in commercial applications with attribution
-
-### ⚠️ Important Notes
-- **API Costs**: Google AI API usage may incur charges
-- **Rate Limits**: Respect API rate limits and usage policies  
-- **Data Privacy**: Consider data handling in production deployments
-- **Attribution**: Credit the original POML project and this demo
-
-### 🤝 Citation
-If you use this demo in research or commercial applications:
-```
-POML AI-Powered Interactive Demo
-Demonstrating structured prompt engineering with Google Gemini
-[Your Repository URL]
-```
